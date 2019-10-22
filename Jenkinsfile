@@ -2,8 +2,7 @@ pipeline {
   agent any
   stages {
 	stage('Unit Test') {
-	   steps {
-	       bat label: 'Test running', script: '''mvn test'''
+	   steps {	       
 	       echo 'Hello Testing done'
        }
    	}
